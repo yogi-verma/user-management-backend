@@ -20,6 +20,12 @@ const app = express();
 // Body parser
 app.use(express.json());
 
+const corsOptions = {
+  origin: "https://user-management-frontend-one.vercel.app",
+  credentials: true, //access-control-allow-credentials:true
+  optionSuccessStatus: 200,
+};
+
 // Enable CORS
 app.use(cors());
 
