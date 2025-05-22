@@ -28,6 +28,8 @@ app.use('/api/auth', authRoutes);
 app.use('/api/software', softwareRoutes);
 app.use('/api/requests', requestRoutes);
 
+app.get('/', (req, res) => res.send('API running'));
+
 // Error handler middleware
 app.use(errorHandler);
 
