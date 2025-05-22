@@ -27,7 +27,7 @@ const corsOptions = {
 };
 
 // Enable CORS
-app.use(cors());
+app.use(cors(corsOptions));
 
 // Mount routers
 app.use('/api/auth', authRoutes);
